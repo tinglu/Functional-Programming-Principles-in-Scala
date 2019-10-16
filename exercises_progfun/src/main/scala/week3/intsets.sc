@@ -1,3 +1,9 @@
+/*
+*
+* Class hierarchies
+*
+* */
+
 abstract class IntSet {
   def incl(x: Int): IntSet
 
@@ -31,6 +37,7 @@ class NonEmpty(elem: Int, left: IntSet, right: IntSet) extends IntSet {
 //  override def toString: String = "."
 //}
 /*
+* !!!!!! NOTE: it's an object not a class here!!!!!!!
 * SINGLETON OBJECT, IS A VALUE ==> EVALUATE TO ITSELF
 */
 object Empty extends IntSet {
